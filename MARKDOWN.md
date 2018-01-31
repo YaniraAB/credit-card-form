@@ -1,7 +1,7 @@
 # FUNCTIONS Y SCOPE
 
 * Se le asigna un evento al Documento html en el ambiente lexical global para que cuando esté 
-  correctamente cargado se ejecute la función anónima que se le dió como parámetro al evento `ready`.
+  correctamente cargado se ejecute la función anónima que se le dió como argumento al evento `ready`.
   
 ~~~
 $(document).ready(function() {
