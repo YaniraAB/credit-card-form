@@ -1,90 +1,81 @@
-*{
-  box-sizing: border-box;
+body {
+  font-size: 14px;
 }
 
-body{
-  margin: 0;
-  padding: 0;
+.title-back {
+  background: rgb(37, 22, 101);
+  height: 70px;
 }
 
-.register-card {
-  padding-top: 4em;
+.title {
+  color: #ffff;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
-/*Utils */
-
-.btn-yellow{
-  background-color: #fbd43b;
-}
-.grey-bold-font{
-  color: #212121;
+.icon-card {
+  margin-bottom: 20px;
+  width: 100px;
 }
 
-.grey-light-font{
-  color: #8f8f8f;
+.margin {
+  width: 50%;
 }
 
-.turquoise-font {
-  color: #00c3a3;
+.btn {
+  background: rgb(227, 111, 5);
+  margin-top: 30px;
 }
 
-.purple-font {
-  color: #49233b;
+.capitalize {
+  text-transform: uppercase;
 }
 
-
-/*Icons*/
-
-.icon-header{
-  height: 80px;
+.date {
+  margin-right: 8px;
 }
 
-.icon-question{
-  position: absolute;
-  height: 25px;
-  top: 15px;
-  right: 15px;
+.date-margin-top {
+  margin-top: 50px;
 }
 
-/* Titles */
-
-.container-text {
-  padding: 0.5em;
-  margin-bottom:1em; 
+.message {
+  border: 1px solid rgb(163, 0, 0);
+  border-radius: 5px;
+  color: rgb(128, 0, 0);
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 25px;
+  padding: 0px 15px 8px 15px;
+  width: 90%;
 }
-.title-h2{
-  font-size: 1.4rem;
-  line-height: 1.6;
+
+.message-red {
+  width: 90%;
+}
+
+.icon-red {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.check {
+  border-radius: 5px;
+  font-size: 20px;
   font-weight: bold;
-}
-.title-p{
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.input-field .prefix {
-  width: 2.3rem;
+  margin-bottom: 25px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  width: 100%;
 }
 
-#next{
-  color: white!important;
-  box-shadow: none;
-
+.check-green {
+  border: 1px solid rgb(0, 194, 89);
+  color: rgb(0, 157, 63);
 }
 
-span {
-  display: inline-block; 
-  visibility: hidden;
-}
-
-input[type=text].valid:not(.browser-default)
- {
-  border-bottom: 1px solid;
-  -webkit-box-shadow: 0 1px 0 0;
-  box-shadow: 0 1px 0 0;
-}
-input[type=text].valid:not(.browser-default):focus {
-  border-bottom: 1px solid #00c3a3;
-  -webkit-box-shadow: 0 1px 0 0 #00c3a3;
-  box-shadow: 0 1px 0 0 #00c3a3;
+.check-red {
+  border: 1px solid rgb(189, 0, 0);
+  color: rgb(145, 0, 0);
 }

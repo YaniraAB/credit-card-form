@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Validator</title>
     <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Materialize</title>
-</head>
-<body>
-  <div class="container">
-    <div class="center-align register-card ">
-      <img class="icon-question" src="assets/img/icons/question.png">
-      <div class="center-align">
-        <img class="icon-header" src="assets/img/icons/bcp-logo.png">
-      </div>
-      <div class="container-text">
-          <h2 class="grey-bold-font title-h2 center-align">Registra tu tarjeta de débito BCP</h2>
-          <p class="grey-light-font title-p">Por ahora solo aceptamos cuentas de ahorro <br> y/o corriente en soles</p>
-      </div>
+  </head>
+  <body>
+    <div class="container center">
+      <header class="row title-back">
+        <div class="col l12 s8 offset-s2">
+          <p class="title">Card Validator</p>
+        </div>
+      </header>
       <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <img src="assets/img/icons/card.png" class="icon-card material-icons prefix">
-              <input id="card-number" type="text" class="validate" maxlength="16">
-              <label for="card-number">Numero de tarjeta</label>
-              <span class="turquoise-font">bien</span>
-              <span class="msg">mal</span>
-            </div>
-            <button type="submit" id="next" class="btn btn-yellow" disabled>continuar</button>
-          </div>
-        </form>
+        <div class="col l12 s6 offset-s3 center">
+          <img class="icon-card" src="assets/images/card-icon.png" alt="icon-card">
+        </div>
       </div>
+      <form id="form" class="" action="index.html" method="post">
+        <div class="row">
+          <div class="center offset-l1 input-field col s10 offset-s1 l4">
+            <i class="material-icons prefix">credit_card</i>
+            <input id="num-card" type="text" class="validate" name="cn">
+            <label for="icon_prefix">El número de la tarjeta de crédito</label>
+            <div class="message">
+              <i class="icon-red material-icons right">warning</i>
+              <p class="message-red">El número de tarjeta no es válida.
+                <br>Por favor vuelve a ingresar el número.</p>
+            </div>
+          </div>
+          <div class="center offset-l1 s10 offset-s1 col l4">
+            <div class="col s12 l6 valign-wrapper">
+              <i class="material-icons date">date_range</i>
+              <span>Fecha de vencimiento</span>
+            </div>
+            <div class="date-margin-top offset-s3 col s2 input-field l2">
+              <input id="month" type="text" class="datepicker validate" placeholder="06" name="exp">
+              <label for="icon_prefix">Mes</label>
+              <i class="icon-red material-icons right">warning</i>
+            </div>
+            <div class="date-margin-top col s1 l1">
+              <p>_</p>
+            </div>
+            <div class="date-margin-top col s3 l3 input-field">
+              <input id="year" type="text" class="datepicker validate" placeholder="2020" name="exp">
+              <label for="icon_prefix">Año</label>
+              <i class="icon-red material-icons right">warning</i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="center offset-l1 input-field s10 offset-s1 col l4">
+            <i class="material-icons prefix">confirmation_number</i>
+            <input id="input-cvv" type="text" class="validate" name="cvv">
+            <label for="icon_prefix">Código de validación de 3 dígitos</label>
+            <div class="message">
+              <i class="icon-red material-icons right">warning</i>
+              <p class="message-red">Solo debe ingresar números.
+                <br>No debes de exceder los 3 dígitos.</p>
+            </div>
+          </div>
+          <div class="center offset-l1 input-field s10 offset-s1 col l5">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="input-name" type="text" class="capitalize validate" name="name">
+            <label for="icon_prefix">Nombre completo</label>
+            <div class="message">
+              <i class="icon-red material-icons right">warning</i>
+              <p class="message-red">Por favor, ingrese su nombre y apellidos completos. (Solo letras)</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col center s6 offset-s3 l12">
+            <a id="btn-validation" class="btn waves-effect waves-light btn"><i class="material-icons left">check_box</i>Validar</a>
+          </div>
+        </div>
+      </form>
     </div>
-  </div>
-  <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
-  <script src="vendors/materialize/js/materialize.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
+  <!--Scripts-->
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
 </html>

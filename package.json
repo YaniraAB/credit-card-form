@@ -1,0 +1,19 @@
+{
+  "name": "card-validator",
+  "version": "1.0.0",
+  "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Producto final_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delacruzPamela/card-validator.git"
+  },
+  "author": "Pamela de la cruz, Yanira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delacruzPamela/card-validator/issues"
+  },
+  "homepage": "https://github.com/delacruzPamela/card-validator#readme"
+}
